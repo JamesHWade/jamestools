@@ -25,6 +25,12 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/ag.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/jamestools-package.html</loc>
   </url>
 </urlset>
