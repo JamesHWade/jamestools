@@ -1,0 +1,45 @@
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+# jamestools
+
+<!-- badges: start -->
+
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Project Status: WIP – Initial development is in progress, but there
+has not yet been a stable, usable release suitable for the
+public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/jamestools)](https://CRAN.R-project.org/package=jamestools)
+[![Codecov test
+coverage](https://codecov.io/gh/JamesHWade/jamestools/branch/master/graph/badge.svg)](https://app.codecov.io/gh/JamesHWade/jamestools?branch=master)
+[![R-CMD-check](https://github.com/JamesHWade/jamestools/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/JamesHWade/jamestools/actions/workflows/R-CMD-check.yaml)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+![Activity](https://img.shields.io/github/last-commit/jameshwade/jamestools)
+<!-- badges: end -->
+
+The goal of jamestools is to be a set of convenience functions to my
+personal development work. I double these are of interest to most, but
+it’s a convenient place to play with package building tools without
+breaking something others want to use.
+
+## Installation
+
+You can install the development version of jamestools like so:
+
+``` r
+require(remotes)
+remotes::install_github("JamesHWade/jamestools")
+```
+
+## Search
+
+Ag - the Silver Searcher is a convenient search function I use all the
+time in the terminal. `ag()` gives you a function to call that in the R
+console.
+
+``` r
+library(jamestools)
+ag("dplyr", filetype = "R")
+```
