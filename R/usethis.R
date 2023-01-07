@@ -1,4 +1,4 @@
-create_james_package <- function(path, copyright_holder = "James Wade") {
+james_create_package <- function(path, copyright_holder = "James Wade") {
   path <- create_package(path, rstudio = TRUE, open = FALSE)
   local_project(path)
   use_testthat()
