@@ -11,7 +11,10 @@
 #' ag("my_pattern")
 #' ag("my_pattern", filetype = "python")
 ag <- function(search, filetype = "R") {
-  cli::cli_alert_info("Starting search...")
+  if ("windows" %in% tolower(version$os)){
+    cli::cli_abort("Not performing search because on Windows.")
+  }
+  cli::cli_inform("Starting search...")
   flags <- switch(filetype,
     "R" = "--r",
     "python" = "--python",
